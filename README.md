@@ -72,21 +72,54 @@ You can perform the following actions using this program:
 - **Eliminar Tabla**: Delete a table from the database.
 - **Modificar Tabla**: Modify the structure of a table.
 
+# Start Program
+
+To select db to work with, use the following syntax:
+
+```
+usar {db name}
+```
+
 # Crear Tabla
 
 To create a new table, use the following syntax:
+
+```
+crear tabla {table name}
+{variable name} type(numerico|alfabetico|decimal|tabla),
+{variable name} type(numerico|alfabetico|decimal|tabla),
+...
+```
 
 # Insertar Tabla
 
 To insert data into a table, use the following syntax:
 
+```
+insertar tabla {table name}
+{variable name} = "value",
+{variable name} = "value",
+...
+```
+
 # Modificar Tabla
 
 To modify a table, use the following syntax:
 
+```
+modificar tabla {table name}
+agregar {variable name} type(numerico|alfabetico|decimal|tabla),
+eliminar {variable name}
+...
+```
+
 # Eliminar Tabla
 
 To delete a table, use the following syntax:
+
+```
+eliminar tabla {table name}
+```
 
 # Examples
 
@@ -110,10 +143,16 @@ modificar tabla Empleados
 eliminar tabla Empleados
 
 cerrar
+```
 
 ## Contributing
+
 Contributions are welcome! If you have any ideas or improvements, feel free to open an issue or submit a pull request.
 
 ## License
+
 This project is licensed under the [MIT License](LICENSE).
+
+```
+
 ```
