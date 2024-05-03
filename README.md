@@ -20,6 +20,17 @@ Welcome to the SQL Spanish Playground! This project provides a platform for exec
   	},
   })
   ```
+- **Response:**
+The response will be a JSON array containing objects representing data entries from a table. Each object contains key-value pairs representing the attributes of the entry. Here's an example response:
+```
+[
+  {
+    "ventas_key": 1,
+    "precio": 20.90,
+    "cantidad": 3
+  }
+]
+```
 
 ### 2. Obtener Estructura de Árbol (Get Tree Structure)
 
@@ -29,6 +40,15 @@ Welcome to the SQL Spanish Playground! This project provides a platform for exec
   ```javascript
   const response = await axios.get("http://localhost:8080/tree")
   ```
+- **Response:**
+The response will be a JSON object containing the tree structure with database names as keys and an array of table names as values. Here's an example response:
+```
+{
+  "db1": ["table1", "table2",...],
+  "db2": [],
+  ...
+}
+```
 
 ### 3. Compilar Texto SQL (Compile SQL Text)
 
