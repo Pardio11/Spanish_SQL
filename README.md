@@ -2,6 +2,8 @@
 
 Welcome to the SQL Spanish Playground! This project provides a platform for executing SQL commands on the server with a focus on the Spanish language. It offers three main endpoints for interacting with the SQL database.
 
+Visit [SQL Frijol](https://github.com/Pardio11/SQL_Frijol) for Frontend
+
 ## Endpoints
 
 ### 1. Obtener Tabla (Get Table)
